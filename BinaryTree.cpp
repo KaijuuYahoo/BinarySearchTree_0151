@@ -9,5 +9,6 @@ class Node{
         //constructor for the node class
         Node(){
             leftchild = nullptr; //Initialize Left child to null
+            rightchild = nullptr; //Initialize Right child to null
         }
 };
