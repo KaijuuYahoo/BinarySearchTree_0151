@@ -5,9 +5,9 @@ class Node{
         int info;
         Node *leftchild;
         Node *rightchild;
-        
+
         //constructor for the node class
         Node(){
-
+            leftchild = nullptr; //Initialize Left child to null
         }
 };
