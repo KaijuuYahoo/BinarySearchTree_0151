@@ -21,6 +21,18 @@ class BinaryTree{
             ROOT = nullptr; // Initializing ROOT to NULL
         }
         void search(int element, Node *&parent, Node *&currentNode){
-            
+            currentNode = ROOT;
+            parent = nullptr;
+            while ((currentNode != NULL)&&(currentNode->info !=element))
+            {
+                //This function searches the currentNode of the specified Node as well as the current Node its Parent
+                parent = currentNode;
+                if (element < currentNode->info)
+                {
+                    currentNode = currentNode->leftchild;
+                }else{
+                    currentNode = currentNode->rightchild;
+                }
+            }
         }
 };
