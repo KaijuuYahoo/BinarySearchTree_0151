@@ -20,6 +20,7 @@ class BinaryTree{
         BinaryTree(){
             ROOT = nullptr; // Initializing ROOT to NULL
         }
+
         void search(int element, Node *&parent, Node *&currentNode){
             currentNode = ROOT;
             parent = nullptr;
@@ -34,5 +35,11 @@ class BinaryTree{
                     currentNode = currentNode->rightchild;
                 }
             }
+        }
+
+        void insert(){
+            int x;
+            cout << "Masukkan Nilai : " ;
+            cin >> x;
         }
 };
