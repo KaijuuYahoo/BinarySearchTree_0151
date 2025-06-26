@@ -12,3 +12,7 @@ class Node{
             rightchild = nullptr; //Initialize Right child to null
         }
 };
+
+class BinaryTree{
+    
+};
