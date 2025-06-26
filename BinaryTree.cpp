@@ -24,7 +24,7 @@ class BinaryTree{
         void search(int element, Node *&parent, Node *&currentNode){
             currentNode = ROOT;
             parent = nullptr;
-            while ((currentNode != NULL)&&(currentNode->info !=element))
+            while ((currentNode != nullptr)&&(currentNode->info !=element))
             {
                 //This function searches the currentNode of the specified Node as well as the current Node its Parent
                 parent = currentNode;
@@ -76,7 +76,7 @@ class BinaryTree{
             }
 
             //7: If the value in the data field of new node is greater than that of parent
-            if (x < parent->info)
+            if (x > parent->info)
             {
                 //7a: Make the right child of parent point to the new node
                 parent ->rightchild = newNode;
